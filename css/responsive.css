@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* media 반응형 */
+@media screen and (max-width: 620px) {
+	.intro,
+	.about,
+	.portfolio,
+	.contact {
+		padding: 6rem 3rem;
+	}
+	.intro-wrap {
+		flex-direction: column;
+	}
+	.intro-sub {
+		margin-bottom: 2rem;
+	}
+	.intro-desc {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.intro-desc p {
+		width: 100%;
+	}
+	.intro-link span {
+		position: relative;
+		padding: 0.4rem 0;
+	}
+	.intro-link span::before {
+		content: '';
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 0.2rem;
+		background-color: var(--secondary-color);
+	}
+	.about .inner {
+		display: flex;
+		flex-direction: column;
+	}
+	.about-left {
+		position: relative;
+		top: 0;
+		margin-bottom: 5rem;
+	}
+	.about-title {
+		font-size: 5rem;
+	}
+	.portfolio {
+		height: auto;
+	}
+	.fp-auto-height {
+		width: 100%;
+		flex-direction: column;
+	}
+	.portfolio-top {
+		margin-bottom: 5rem;
+		display: block;
+	}
+	.portfolio-title {
+		border-left: 4px solid var(--primary-color);
+		font-size: 5rem;
+		padding: 0 1.4rem;
+	}
+	.project {
+		max-width: 100%;
+		flex-direction: column;
+		text-align: center;
+		background-color: #333;
+		border-radius: 2rem;
+		padding: 2.5rem 0;
+		gap: 4rem;
+	}
+	.portfolio .project .publishing_contents .lang {
+		justify-content: center;
+	}
+	.portfolio .project .publishing_contents {
+		margin: 0;
+		width: 100%;
+	}
+	.portfolio .publishing_img {
+		width: 25rem;
+	}
+	.portfolio .project .publishing_contents .btn-group {
+		justify-content: center;
+		width: 100%;
+		padding: 0 2rem;
+	}
+	.modal__wrap {
+		width: 100%;
+		height: auto;
+	}
+}
