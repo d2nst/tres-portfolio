@@ -7,6 +7,10 @@
 	.contact {
 		padding: 6rem 3rem;
 	}
+
+	.visual-list {
+		padding: 3rem 3rem 0;
+	}
 	.intro-wrap {
 		flex-direction: column;
 	}
